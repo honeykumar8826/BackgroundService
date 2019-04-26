@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.service">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MediaPlayerFunActivity"
+            android:label="Check Bound Running"/>
+        <activity android:name=".activity.MediaPlayerActivity"
+            android:label="Media Player"/>
+        <activity android:name=".activity.MultipleImageDownloadActivity"
+            android:label="Thread pool Image Download "/>
+        <activity android:name=".activity.IntentServiceActivity"
+            android:label="Intent Service"/>
+        <activity
+            android:name=".activity.BoundServiceActivity"
+            android:label="Bound Service" />
+        <activity android:name=".activity.ForegroundServiceExpActivity"
+            android:label="ForeGround Service"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Multiple Images downloading">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.ServiceImp" />
+        <service android:name=".service.ServiceImpForeground" />
+        <service android:name=".service.ServiceBoundExp" />
+        <service android:name=".service.ServiceIntentExp" />
+    </application>
+
+</manifest>

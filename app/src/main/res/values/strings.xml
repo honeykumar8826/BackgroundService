@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BackgroundService</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="move_on_next">Move on Next</string>
+    <string name="first_ms_from_service">First Ms From Service</string>
+    <string name="second_ms_from_service">Second Ms From Service</string>
+    <string name="no_message">No Message</string>
+    <string name="thread_pool_start">Thread Pool Start</string>
+    <string name="move_to_multiple_image_download">Move To Multiple Image Download</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="media_player_activity">Media Player Activity</string>
+    <string name="for_another_app_to_check_fun">For Another App To check Fun</string>
+</resources>
